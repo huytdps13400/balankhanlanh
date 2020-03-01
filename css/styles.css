@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: darkgrey;
+    opacity: 30%;
+    position: fixed;
+}
+
+.page1 {
+    background: url("../img/header-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    padding: 15% 15% 0 15%;
+}
+
+.banner .title {
+    color: #ffffff;
+    font-size: 46px;
+}
+
+.banner .btn {
+    background-color: #ffffff;
+    width: 10%;
+    height: 6%;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+}
+
+.page2 {
+    /* background: url("../img/header-bg.jpg"); */
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.page3 {
+    /* background: url("../img/header-bg.jpg"); */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: lawngreen;
+}
+
+.img1 {
+    width: 50%;
+    height: 100%;
+    /* background: url("../img/video-bg.jpg"); */
+    /* background-color: lightgoldenrodyellow; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img1 img {
+    border-radius: 7px;
+    width: 75%;
+    margin-left: 10%;
+}
+
+.content1 {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content2 {
+    justify-content: center;
+    align-items: center;
+    padding: 0 25% 0 15%;
+}
+
+h1,
+h6,
+p,
+.title,
+.btn {
+    font-family: "Poppins";
+    color: #777;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3em;
+}
+
+h6 {
+    font-size: 12px;
+    color: #b68834;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+}
+
+span {
+    color: #000;
+    margin: 10px 0 10px 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+.content2 img {
+    width: 35%;
+    margin-top: 20px;
+}
+
+.play {
+    background-color: transparent;
+    position: absolute;
+    margin-left: 3%;
+}
