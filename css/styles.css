@@ -3,11 +3,22 @@
     padding: 0;
 }
 
-.header {
+#header {
     width: 100%;
     height: 10%;
-    background-color: darkgrey;
-    opacity: 30%;
+    background-color: transparent;
+    /* opacity: 30%; */
+    position: fixed;
+}
+
+#header.header-scrolled {
+    background: rgba(20, 2, 0, 0.8);
+    width: 100%;
+    height: 50%;
+    transition: all 0.5s;
+}
+
+.sticky {
     position: fixed;
 }
 
@@ -20,8 +31,7 @@
 }
 
 .banner {
-    position: relative;
-    width: 50%;
+    width: 40%;
     padding: 15% 15% 0 15%;
 }
 
@@ -96,6 +106,7 @@
 h1,
 h6,
 p,
+ul,
 .title,
 .btn {
     font-family: "Poppins";
@@ -137,4 +148,54 @@ p {
     background-color: transparent;
     position: absolute;
     margin-left: 3%;
+}
+
+.row1 {
+    /* background-color: rgb(116, 108, 43); */
+    width: 100%;
+    height: 50%;
+}
+
+.info {
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+}
+
+.info li {
+    margin: 0.7%;
+    list-style: none;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+    margin-left: 6%;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    list-style: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 360;
+    justify-content: flex-end;
+    margin-right: 6%;
+    padding-top: 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px 0 10px;
+    justify-content: center;
+    text-align: center;
 }
