@@ -1,26 +1,268 @@
+/* =============================================
+ *
+ *   FIXED RESPONSIVE NAV
+ *
+ *   (c) 2014 @adtileHQ
+ *   http://www.adtile.me
+ *   http://twitter.com/adtilehq
+ *
+ *   Free to use under the MIT License.
+ *
+ * ============================================= */
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+hr,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+hgroup {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+
+/* ------------------------------------------
+  RESPONSIVE NAV STYLES
+--------------------------------------------- */
+
+.nav-collapse ul {
+    margin-top: 2%;
+    padding-right: 20px;
+    width: 100%;
+    display: block;
+    list-style: none;
+}
+
+.nav-collapse li {
+    width: 100%;
+    display: block;
+}
+
+.js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.nav-collapse.opened {
+    max-height: 9999px;
+    background-color: rgba(167, 164, 164, 0.4);
+    display: flex;
+}
+
+
+/* .nav-collapse.opened li {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+
+.disable-pointer-events {
+    pointer-events: none !important;
+}
+
+@media screen and (min-width: 40em) {
+    .js .nav-collapse {
+        position: relative;
+    }
+    .js .nav-collapse.closed {
+        max-height: none;
+    }
+    .nav-toggle {
+        display: none;
+    }
+}
+
+
+/* ------------------------------------------
+  DEMO STYLES
+--------------------------------------------- */
+
+
+/* ------------------------------------------
+  FIXED HEADER
+--------------------------------------------- */
+
+header {
+    background: transparent;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+--------------------------------------------- */
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+/* .nav-collapse,
+.nav-collapse * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+.nav-collapse,
+.nav-collapse ul {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+@media screen and (min-width: 40em) {
+    .nav-collapse {
+        float: right;
+        width: auto;
+    }
+}
+
+.nav-collapse li {
+    float: left;
+    width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+    .nav-collapse li {
+        width: auto;
+    }
+}
+
+.nav-collapse a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    /* background: #61605f; */
+    padding: 0.7em 1em;
+    color: #fff;
+    width: 100%;
+    float: left;
+}
+
+.nav-collapse ul ul a {
+    background: rgb(189, 189, 189);
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 40em) {
+    .nav-collapse ul ul a {
+        display: none;
+    }
+}
+
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+.nav-toggle {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+}
+
+.nav-toggle:before {
+    color: #fff;
+    font: normal 28px/55px "responsivenav";
+    text-transform: none;
+    text-align: center;
+    position: absolute;
+    content: "\2261";
+    text-indent: 0;
+    /* speak: none; */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.nav-toggle.active:before {
+    font-size: 20px;
+    content: "\78";
+    /* Close icon */
+}
+
+
+/* ---------------------------- */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#header {
-    width: 100%;
-    height: 10%;
-    background-color: transparent;
-    /* opacity: 30%; */
-    position: fixed;
-}
 
-#header.header-scrolled {
-    background: rgba(20, 2, 0, 0.8);
-    width: 100%;
-    height: 50%;
-    transition: all 0.5s;
-}
-
-.sticky {
-    position: fixed;
-}
+/* ____ */
 
 .page1 {
     background: url("../img/header-bg.jpg");
@@ -176,8 +418,14 @@ p {
 }
 
 .logo {
-    width: 50%;
+    /* width: 50%; */
     margin-left: 6%;
+    display: inline;
+}
+
+.logo img {
+    margin-top: 2%;
+    width: 7em;
 }
 
 .menu {

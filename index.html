@@ -1,45 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="./css/styles.css">
-
+    <meta charset="utf-8">
+    <title>Adtile Fixed Nav</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <script src="js/responsive-nav.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <div class="top">
-            <div class="row1">
-                <ul class="info">
-                    <li>Mon-Fri: 8AM to 2PM</li>
-                    <li>Sat-Sun: 11AM to 4PM</li>
-                    <li>(012) 69852367512</li>
-                </ul>
-            </div>
-            <div class="row2">
-                <div class="logo">
-                    <img src="./img/logo.png" alt="logo">
-                </div>
 
-                <ul class="menu">
-                    <li class="hv"> <a href="#">HOME</a></li>
-                    <li class="hv"><a href="#"> ABOUT</a></li>
-                    <li class="hv"><a href="#">COFFEE</a></li>
-                    <li class="hv"><a href="#">REVIEW</a></li>
-                    <li class="hv"><a href="#">BLOG</a> </li>
-                    <li class="hv"><a href="#">CONTACT</a></li>
-                </ul>
-
-
-            </div>
+    <header>
+        <div class="logo"> <img src="./img/logo.png" alt="">
+            <a href="#home" data-scroll>
+            </a>
         </div>
 
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item active"><a href="#home" data-scroll>HOME</a></li>
+                <li class="menu-item"><a href="#about" data-scroll>ABOUT</a></li>
+                <li class="menu-item"><a href="#coffee" data-scroll>COFFEE</a></li>
+                <li class="menu-item"><a href="#review" data-scroll>REVIEW</a></li>
+                <li class="menu-item"><a href="#blog" data-scroll>BLOG</a></li>
+                <li class="menu-item"><a href="#contact" data-scroll>CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="page1">
+    <section class="page1" id="home">
         <div class="banner">
             <h1 class="title">
                 Start your day with <br> a black Coffee
@@ -48,7 +41,7 @@
         </div>
     </section>
 
-    <section class="page2">
+    <section class="page2" id="about">
         <div class="img1">
             <img src="./img/video-bg.jpg" alt="photo">
             <a class="play" href="#">
@@ -68,11 +61,14 @@
         </div>
     </section>
 
-    <section class="page3">
+    <section class="page3" id="coffee">
 
     </section>
 
-    <script src="js/script.js"></script>
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
 </body>
 
 </html>
