@@ -144,7 +144,7 @@ header {
     padding-left: 2em;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 4em) {
     .nav-collapse ul ul a {
         display: none;
     }
@@ -358,13 +358,12 @@ p {
 }
 
 .logo {
-    /* width: 50%; */
-    margin-left: 5%;
+    margin-left: 3.5%;
     display: inline;
 }
 
 .logo img {
-    margin-top: 1%;
+    margin: 12px 0 0px 0;
     width: 120px;
 }
 
