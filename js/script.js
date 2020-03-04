@@ -1,10 +1,10 @@
 $(function() {
-    var pull = $('#pull');
-    menu = $('nav ul');
-    menuHeight = menu.height();
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 50) {
+            $(".head").addClass("active");
+        } else {
 
-    $(pull).on('click', function(e) {
-        e.preventDefault();
-        menu.slideToggle();
+            $(".head").removeClass("active");
+        }
     });
 });
