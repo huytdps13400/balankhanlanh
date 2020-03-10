@@ -244,7 +244,7 @@ header {
 @media screen and (max-width: 850px) {
     .page1 {
         background: url("../img/header-bg.jpg");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 100vw;
@@ -261,36 +261,199 @@ header {
     display: flex;
 }
 
-@media screen and (max-width: 850px) {
-    .page2 {
+.page3 {
+    background: url("../img/menu-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+}
+
+.type {
+    display: block;
+}
+
+.title-1 h1,
+h5 {
+    text-align: center;
+}
+
+.title-1 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.grid {
+    display: grid;
+    max-height: 100%;
+    /* max-width: 100%; */
+    grid-column-gap: 1vw;
+    grid-row-gap: 4vw;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    /* margin-top: 3vw; */
+}
+
+
+/* .grid-item {
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+} */
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    width: 60%;
+    transform: translateX(25%);
+    border-radius: 7px;
+    height: 4rem;
+    font-family: "Poppins";
+    font-size: 85%;
+    box-shadow: 5px 5px rgba(34, 32, 32, 0.05);
+}
+
+.name {
+    width: 50%;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.cost {
+    width: 45%;
+    font-weight: 600;
+    color: #b68834;
+    font-size: 110%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.desciption {
+    padding-top: 3%;
+    width: 100%;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-height: 100%;
+        padding-bottom: 3vw;
+    }
+    .page3 {
+        background: url("../img/menu-bg.jpg");
+        background-size: contain;
         width: 100%;
-        height: 100vw;
-        background-color: #ffffff;
-        display: block;
+        height: 100%;
+        background-color: rgb(96, 201, 44)
     }
 }
 
-.page3 {
-    background-size: cover;
-    width: 100%;
-    height: 50vw;
-    background-color: rgb(96, 201, 44)
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        max-height: 100%;
+        padding-bottom: 3vw;
+    }
+    .page3 {
+        background: url("../img/menu-bg.jpg");
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(96, 201, 44)
+    }
 }
 
+
+/* -------------------------------- */
+
 .page4 {
-    /* background: url("../img/header-bg.jpg"); */
-    background-size: cover;
     width: 100%;
-    height: 50vw;
-    background-color: rgb(44, 68, 201)
+    height: 55vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.column-1 {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column-2 {
+    flex: 41%;
+    max-width: 41%;
+    padding: 0 4px;
+}
+
+img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.row-img {
+    display: flex;
+    max-width: 98%;
+}
+
+.row-img img {
+    margin-top: 2.5%;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.row-img .one {
+    padding-right: 1%;
+}
+
+.row-img .two {
+    padding-left: 1%;
+    width: 50%;
 }
 
 .page5 {
-    /* background: url("../img/header-bg.jpg"); */
-    background-size: cover;
     width: 100%;
     height: 50vw;
-    background-color: rgb(201, 44, 149)
+    background-color: #b68834;
+}
+
+.review-main {
+    display: flex;
+    justify-content: center;
+}
+
+.review {
+    width: 40%;
+    height: 20vw;
+    color: white;
+}
+
+.review img {
+    width: 12%;
+    height: 3vw;
+}
+
+.review h2 {
+    color: white;
+    padding-top: 2%;
+    font-size: 17px;
+}
+
+.review h5 {
+    color: white;
+    text-align: left;
+    padding-top: 3%;
+    letter-spacing: 0;
 }
 
 .page6 {
@@ -298,7 +461,14 @@ header {
     background-size: cover;
     width: 100%;
     height: 50vw;
-    background-color: rgb(201, 172, 44)
+    background-color: rgb(255, 255, 255)
+}
+
+.page7 {
+    background: url("../img/footer-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
 }
 
 .img1 {
@@ -330,6 +500,21 @@ header {
 }
 
 @media screen and (max-width:850px) {
+    .page2 {
+        width: 100%;
+        height: 100vw;
+        background-color: #ffffff;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .img1 {
+        width: 70%;
+        /* height: 40vw; */
+        margin-left: 10vw;
+        margin-bottom: 5%;
+        transform: translateY(50%);
+    }
     .content1 {
         width: 100%;
         height: 30vw;
@@ -338,16 +523,14 @@ header {
         justify-content: center;
         align-items: center;
         padding: 0% 20% 0 30%;
-    }
-    .img1 {
-        width: 60%;
-        height: 30vw;
-        margin-left: 16vw;
+        transform: translateY(50%);
     }
 }
 
 h1,
+h2,
 h6,
+h5,
 p,
 ul,
 .title,
@@ -369,6 +552,14 @@ h6 {
     font-weight: 300;
     letter-spacing: 2px;
     font-family: "Poppins";
+    text-align: left;
+}
+
+h5 {
+    font-size: 1vw;
+    color: #b68834;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 span {
