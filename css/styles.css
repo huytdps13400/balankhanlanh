@@ -3,13 +3,14 @@ a:hover {
     outline: 0;
 }
 
-@-webkit-viewport {
+
+/* @-webkit-viewport {
     width: device-width;
 }
 
 @-moz-viewport {
     width: device-width;
-}
+} */
 
 @-ms-viewport {
     width: device-width;
@@ -457,7 +458,6 @@ img {
 }
 
 .page6 {
-    /* background: url("../img/header-bg.jpg"); */
     background-size: cover;
     width: 100%;
     height: 50vw;
